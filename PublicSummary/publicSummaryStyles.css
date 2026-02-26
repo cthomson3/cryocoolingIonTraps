@@ -1,0 +1,257 @@
+/*  Global  */
+
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('Serif/cmunbi.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('Serif/cmunbx.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('Serif/cmunrm.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('Serif/cmunti.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: 'CMU Serif', serif;
+  background-color: #e9eef2;   /* softer cryogenic background */
+  color: #041E42;
+  margin: 0;
+}
+
+/*  Header  */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #041E42;
+  padding: 20px 40px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.site-title {
+  color: #ffffff;
+  flex: 2;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Uni Logo image */
+.logo {
+  background-color: #ffffff;
+  height: 110px;
+  width: auto;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* Navigation container */
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+/* Navigation links */
+.header-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+
+.header-right a:hover {
+  background-color: #2f5d8c;
+}
+
+.header-right a.active {
+  background-color: #ffffff;
+  color: #0948a1;
+}
+
+/* Section Panels  */
+
+.section,
+.section2 {
+  background-color: #f2f5f7;   /* approachable cool tone */
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* Optional slight variation */
+.section2 {
+  background-color: #eef3f6;
+}
+
+/*  Headings */
+
+h1, h2 {
+  color: #041E42;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+/* subtle academic separator */
+h2 {
+  border-bottom: 2px solid #2f5d8c;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/*  Paragraphs  */
+
+p {
+  font-size: 1.05rem;
+  color: #2f5d8c;
+  max-width: 850px;
+  line-height: 1.7;
+  margin: 0 auto 20px auto;
+}
+
+li{
+  color: #2f5d8c;
+  line-height: 1.7;
+}
+/* Links  */
+
+a {
+  color: #2f5d8c;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Image Slider ===== */
+
+.image-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px auto 20px auto;
+}
+
+.image-slider img {
+  width: 420px;
+  height: auto;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.arrow {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #041E42;
+  transition: 0.2s ease;
+}
+
+.arrow:hover {
+  color: #2f5d8c;
+}
+
+#imageCaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 15px;
+  color: #2f5d8c;
+}
+
+/* ion cooling slider and button */
+
+.controls {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#slider {
+  width: 300px;
+  margin-top: 10px;
+}
+
+#resetBtn {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #2f5d8c;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#resetBtn:hover {
+  background-color: #e8f1f7;
+}
+
+#explanation {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #2f5d8c;
+  text-align: center;
+}
+
+/* Canvas container */
+#canvas-container {
+  margin: 30px auto;
+  width: fit-content;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* images on home page*/
+
+@media (max-width: 700px) {
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .header-right {
+    flex-direction: column;
+  }
+
+  .section,
+  .section2 {
+    padding: 30px;
+  }
+
+  .image-slider img {
+    width: 90%;
+  }
+}
+/* contact page logos */
+.left-image { height: 50px; width: auto; padding-left: 100px; }
